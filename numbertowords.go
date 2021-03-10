@@ -40,12 +40,12 @@ var tenwords = [10]string{
 	"ninety",
 }
 
-//maxnumber Maximum number should be valid
-const maxnumber = 99999
+//MaxNumber Maximum number should be valid
+const MaxNumber = 99999
 
 //Convert converts number between 0 to Maxnumber to words.
 func Convert(number int) (string, error) {
-	if number < 0 || number > maxnumber {
+	if number < 0 || number > MaxNumber {
 		return "", errors.New("Number is not in valid range")
 	}
 
